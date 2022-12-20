@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html,
+body {
+    display: grid;
+    height: 100%;
+    width: 100%;
+    place-items: center;
+    background: linear-gradient(315deg, #ffffff 0%, #d7e1ec 74%);
+}
+
+.wrapper .btn {
+    overflow: hidden;
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    margin: 0 5px;
+    border-radius: 50px;
+    background: #fff;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+}
+
+.wrapper .btn:hover {
+    width: 200px;
+}
+
+.btn .icon {
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    border-radius: 50px;
+    text-align: center;
+    line-height: 60px;
+    transition: all 0.3s ease-out;
+}
+
+.btn:nth-child(1):hover .icon {
+    background: #4267b2;
+}
+.btn:nth-child(2):hover .icon {
+    background: #1da1f2;
+}
+.btn:nth-child(3):hover .icon {
+    background: #e1306c;
+}
+.btn:nth-child(4):hover .icon {
+    background: #333;
+}
+.btn:nth-child(5):hover .icon {
+    background: #ff0000;
+}
+
+.icon i {
+    line-height: 60px;
+    font-size: 1.725rem;
+    transition: all 0.3s ease-out;
+}
+
+.btn:hover .icon i {
+    color: #fff;
+}
+
+.btn > span {
+    font-size: 1.325rem;
+    font-weight: 500;
+    line-height: 60px;
+    margin-left: 10px;
+    transition: all 0.3s ease-out;
+}
+
+.wrapper .btn:nth-child(1) span {
+    color: #4267b2;
+}
+.wrapper .btn:nth-child(2) span {
+    color: #1da1f2;
+}
+.wrapper .btn:nth-child(3) span {
+    color: #e1306c;
+}
+.wrapper .btn:nth-child(4) span {
+    color: #333;
+}
+.wrapper .btn:nth-child(5) span {
+    color: #ff0000;
+}
