@@ -1,2 +1,109 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
-/* font-family:"Lato","Helvetica Neue",Helvetica,Arial,sans-serif */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap');
+
+/* person reset */
+a {
+    color: #34495e;
+    text-decoration: none;
+    background: transparent;
+}
+
+p {
+    margin: 0 0 10.5px;
+}
+
+/* main */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: #ffffff;
+    color: #34495e;
+    font-family: 'Poppins', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 16px;
+}
+
+.card-row {
+    display: flex;
+    max-width: 1200px;
+    margin: 60px auto;
+}
+
+.card-item {
+    flex-basis: 25%;
+    box-shadow: 0 1px 2px rgb(0 0 0 / 10%), 0 5px 15px rgb(0 0 0 / 5%);
+    border-radius: 4px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.card-item:hover {
+    box-shadow: 0 1px 18px rgba(0, 0, 0, 0.1), 0 5px 30px rgba(0, 0, 0, 0.09);
+    transform: translateY(-5px) scale(1.01);
+    transition: transform .5s;
+}
+
+.card-top {
+    height: 200px;
+    border-radius: 4px 4px 0 0;
+    text-align: center;
+    padding-top: 14%;
+}
+
+.card-img {
+    height: 130px;
+    width: 130px;
+    display: inline-block;
+}
+
+.card-top-one {
+    background-color: #7840c1;
+}
+.card-top-two {
+    background-color: #17c5cb;
+}
+.card-top-three {
+    background-color: #2da2f8;
+}
+.card-top-four {
+    background-color: #18284d;
+}
+.card-top-five {
+    background-color: #2ea2f8;
+}
+.card-top-six {
+    background-color: #28C33C;
+}
+.card-top-seven {
+    background-color: #00dbe2;
+}
+.card-top-eight {
+    background-color: #18284d;
+}
+
+.card-bottom {
+    display: block;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.card-bottom > h5 {
+    margin-top: 10.5px;
+    margin-bottom: 10.5px;
+    padding-top: 20px;
+    line-height: 1.1;
+    font-size: 24px;
+    font-weight: 400;
+    color: #344a5e;
+}
+
+.card-bottom > p {
+    color: #9ca7b4;
+    font-weight: 200;
+    line-height: 1.7;
+    font-size: 14px;
+    padding-top: 10px;
+    padding-bottom: 30px;
+}
+
