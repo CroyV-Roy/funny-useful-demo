@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Uploader</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="uploader">
+    <p class="" id="fname">Upload Your Image</p>
+    <div class="overlay">
+      <img src="./Upload.png" alt="" id="preview">
+      <form enctype="multipart/form-data">
+        <input class="box" type="file" id="upload" accept="image/*">
+      </form>
+    </div>
+  </div>
+
+  <script>
+    const inp = document.querySelector('#upload');
+    const preview = document.querySelector('#preview');
+    const fname = document.querySelector('#fname');
+
+    inp.addEventListener('change', (e) => {
+      const [file] = inp.files;
+      if (file) {
+        preview.src = URL.createObjectURL(file);
+        preview.style.width = '100%';
+        preview.style.height = '100%';
+        preview.style.objectFix = 'cover';
+        fname.textContent = file.name;
+      }
+    })
+
+  </script>
+</body>
+
+</html>

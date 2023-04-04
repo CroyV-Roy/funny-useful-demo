@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  background: #eee;
+}
+
+.uploader {
+  max-width: max-content;
+  margin: auto;
+  background: #fff;
+  display: block;
+  border-radius: 10px;
+  padding: 1em;
+  text-align: center;
+  margin-top: 10em;
+}
+
+.overlay {
+  position: relative;
+  margin-top: 1em;
+  background: #eee;
+  opacity: .8;
+}
+
+.overlay:hover {
+  opacity: 1;
+  transition: .5s;
+}
+
+.overlay img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 40px;
+  height: 40px;
+}
+
+.box {
+  opacity: 0;
+  height: 20em;
+  width: 20em;
+  cursor: pointer;
+}
