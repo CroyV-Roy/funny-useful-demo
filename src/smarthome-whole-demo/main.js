@@ -4,52 +4,52 @@ const menu = document.querySelector('.nav-items');
 
 // open nav menu
 menuBtn.addEventListener('click', () => {
-  menu.style.display = 'block';
-  menuBtn.style.display = 'none';
-  closeBtn.style.display = 'inline-block';
+    menu.style.display = 'block';
+    menuBtn.style.display = 'none';
+    closeBtn.style.display = 'inline-block';
 });
 
 // close nav menu function
 const closeNavMenu = () => {
-  menu.style.display = 'none';
-  menuBtn.style.display = 'inline-block';
-  closeBtn.style.display = 'none';
+    menu.style.display = 'none';
+    menuBtn.style.display = 'inline-block';
+    closeBtn.style.display = 'none';
 };
 
 closeBtn.addEventListener('click', () => {
-  closeNavMenu();
+    closeNavMenu();
 });
 
 // show/hide faqs
 const faqs = document.querySelectorAll('.faq');
 
 faqs.forEach(faq => {
-  faq.addEventListener('click', () => {
-    faq.classList.toggle('open');
-    // change icon
-    const icon = faq.querySelector('.faq-icon i');
-    if (icon.className === 'uil uil-plus') {
-      icon.className = 'uil uil-minus';
-    } else {
-      icon.className = 'uil uil-plus';
-    }
-  });
+    faq.addEventListener('click', () => {
+        faq.classList.toggle('open');
+        // change icon
+        const icon = faq.querySelector('.faq-icon i');
+        if (icon.className === 'uil uil-plus') {
+            icon.className = 'uil uil-minus';
+        } else {
+            icon.className = 'uil uil-plus';
+        }
+    });
 });
 
 // add background style to navbar
 window.addEventListener('scroll', () => {
-  document
-    .querySelector('nav')
-    .classList.toggle('window-scroll', window.scrollY > 0);
+    document
+        .querySelector('nav')
+        .classList.toggle('window-scroll', window.scrollY > 0);
 });
 
 // ADDED AFTER TUTORIAL
 // close nav menu when any nav Items is clicked on tablets and mobile
 const navItems = document.querySelectorAll('.nav-items li a');
 if (window.innerWidth < 1024) {
-  navItems.forEach(item => {
-    item.addEventListener('click', () => {
-      closeNavMenu();
+    navItems.forEach(item => {
+        item.addEventListener('click', () => {
+            closeNavMenu();
+        });
     });
-  });
 }
